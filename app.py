@@ -4,9 +4,6 @@ import streamlit.components.v1 as stc
 
 # Load EDA
 import pandas as pd 
-#from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity,linear_kernel
-
 
 # Load Our Dataset
 def load_data(data):
