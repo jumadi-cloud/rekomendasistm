@@ -1,12 +1,10 @@
 # Core Pkg
 import streamlit as st 
 import streamlit.components.v1 as stc 
-import json
-
 
 # Load EDA
 import pandas as pd 
-from sklearn.feature_extraction.text import CountVectorizer
+#from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity,linear_kernel
 
 
