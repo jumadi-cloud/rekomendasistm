@@ -15,7 +15,7 @@ def load_data(data):
 # Vectorize + Cosine Similarity Matrix
 
 def vectorize_text_to_cosine_mat(data):
-	count_vect = CountVectorizer()
+	#count_vect = CountVectorizer()
 	cv_mat = count_vect.fit_transform(data)
 	# Get the cosine
 	cosine_sim_mat = cosine_similarity(cv_mat)
