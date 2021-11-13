@@ -70,7 +70,7 @@ def search_term_if_not_found(term,df):
 
 def main():
 
-	st.title("Course Recommendation App")
+	st.title("Aplikasi Rekomendasi Kursus")
 
 	menu = ["Home","Recommend","About"]
 	choice = st.sidebar.selectbox("Menu",menu)
@@ -83,7 +83,7 @@ def main():
 
 
 	elif choice == "Recommend":
-		st.subheader("Recommend Courses")
+		st.subheader("Rekomendasikan Kursus")
 		cosine_sim_mat = vectorize_text_to_cosine_mat(df['course_title'])
 		search_term = st.text_input("Search")
 		num_of_rec = st.sidebar.number_input("Number",4,30,7)
@@ -120,8 +120,9 @@ def main():
 
 	else:
 		st.subheader("About")
+		st.text("https://github.com/jumadi-cloud")
+		st.text("Referensi untuk belajar: https://www.youtube.com/c/JCharisTechJSecur1ty/")
 		st.text("Built with Streamlit & Pandas")
-
 
 if __name__ == '__main__':
 	main()
